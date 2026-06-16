@@ -1,0 +1,24 @@
+data:
+  raw_dir: ./data/raw
+  persist_dir: ./storage
+
+chunking:
+  chunk_size: 512
+  chunk_overlap: 80
+
+retrieval:
+  bm25_top_k: 10
+  dense_top_k: 10
+  fusion_top_k: 20
+  fusion_method: rrf
+  rrf_k: 60
+
+rerank:
+  enabled: true
+  provider: cohere
+  model: rerank-english-v2.0
+  top_n: 5
+
+debug:
+  save_retrieval_trace: true
+  output_path: ./outputs/retrieval_debug.jsonl

@@ -1,0 +1,4 @@
+# Optional dependency for reading PDF files directly.
+# Markdown, JSON, and TXT processing in scripts/rag_preprocess.py use only Python standard library.
+pypdf>=4.0.0
+

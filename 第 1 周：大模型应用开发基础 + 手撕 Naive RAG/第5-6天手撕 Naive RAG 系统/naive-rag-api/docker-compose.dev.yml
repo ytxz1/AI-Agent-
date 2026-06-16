@@ -1,0 +1,17 @@
+services:
+  rag-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: naive-rag-api:dev
+    container_name: naive-rag-api-dev
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+      - ./samples:/app/samples
+      - ./data:/app/data
+    command: python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
