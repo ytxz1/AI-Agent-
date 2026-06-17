@@ -1,0 +1,33 @@
+{
+  "total_blocks": 4,
+  "by_parser": {
+    "mineru": 4
+  },
+  "by_type": {
+    "image": 1,
+    "table": 1,
+    "text": 1,
+    "title": 1
+  },
+  "by_document_parser": {
+    "demo_report::mineru": 4
+  },
+  "text": {
+    "with_text_ratio": 1.0,
+    "avg_text_chars": 49.25,
+    "empty_text_blocks": 0
+  },
+  "metadata": {
+    "with_page_ratio": 1.0,
+    "with_bbox_ratio": 1.0,
+    "with_section_path_ratio": 1.0
+  },
+  "tables": {
+    "table_blocks": 1,
+    "with_html_ratio": 1.0
+  },
+  "assets": {
+    "blocks_with_image_path": 2,
+    "existing_image_path_ratio": 0.0
+  }
+}

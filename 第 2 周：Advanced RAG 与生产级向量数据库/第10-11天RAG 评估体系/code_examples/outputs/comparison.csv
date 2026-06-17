@@ -1,0 +1,13 @@
+﻿metric,baseline,optimized,delta
+hit_rate_at_3,1.0,1.0,0.0
+recall_at_3,1.0,1.0,0.0
+precision_at_3,0.5,0.5,0.0
+mrr,0.8889,1.0,0.1111
+context_precision_proxy,0.8889,1.0,0.1111
+context_recall_proxy,1.0,1.0,0.0
+faithfulness_proxy,0.8509,0.8354,-0.0154
+answer_relevancy_proxy,0.2893,0.2854,-0.004
+fact_coverage,0.4444,0.8889,0.4444
+forbidden_claim_rate,0.1667,0.0,-0.1667
+latency_ms,0.0,1.0,1.0
+pass_rate,0.3333,0.8333,0.5

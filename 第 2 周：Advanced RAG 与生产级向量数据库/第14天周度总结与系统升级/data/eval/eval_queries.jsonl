@@ -1,0 +1,9 @@
+{"query_id":"q001","query":"第一周基础 RAG 系统有哪些主要短板？","relevant_sources":["data/raw/01_rag_v1_baseline.md"],"query_type":"baseline"}
+{"query_id":"q002","query":"Milvus 在生产级 RAG 中负责什么？","relevant_sources":["data/raw/02_milvus_vector_database.md"],"query_type":"milvus"}
+{"query_id":"q003","query":"为什么生产级 RAG 需要 BM25 和 Embedding 混合检索？","relevant_sources":["data/raw/03_hybrid_retrieval.md"],"query_type":"hybrid"}
+{"query_id":"q004","query":"RRF 如何融合 BM25 和向量检索结果？","relevant_sources":["data/raw/03_hybrid_retrieval.md"],"query_type":"fusion"}
+{"query_id":"q005","query":"Reranker 能解决什么问题，不能解决什么问题？","relevant_sources":["data/raw/04_reranker_second_stage.md"],"query_type":"rerank"}
+{"query_id":"q006","query":"HyDE 和 Multi-Query 属于 RAG 链路中的哪个阶段？","relevant_sources":["data/raw/05_query_transformation.md"],"query_type":"query_transform"}
+{"query_id":"q007","query":"如何证明 RAG 系统升级后真的更好？","relevant_sources":["data/raw/06_rag_evaluation_trace.md"],"query_type":"evaluation"}
+{"query_id":"q008","query":"如果答案错了，retrieval trace 应该帮助我们排查哪些环节？","relevant_sources":["data/raw/06_rag_evaluation_trace.md"],"query_type":"trace"}
+

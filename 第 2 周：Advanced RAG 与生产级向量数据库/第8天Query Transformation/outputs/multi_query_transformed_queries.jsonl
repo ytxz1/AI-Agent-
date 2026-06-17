@@ -1,0 +1,5 @@
+{"original_query": "如何提升 RAG 的召回率？", "strategy": "original", "text": "如何提升 RAG 的召回率？", "weight": 1.0, "metadata": {}}
+{"original_query": "如何提升 RAG 的召回率？", "strategy": "multi_query", "text": "RAG 系统中提高向量检索召回率的方法有哪些？", "weight": 0.9, "metadata": {"source_query": "如何提升 RAG 的召回率？", "index": 0, "prompt": "MULTI_QUERY_PROMPT"}}
+{"original_query": "如何提升 RAG 的召回率？", "strategy": "multi_query", "text": "如何通过 HyDE、Multi-Query 和查询改写改善 RAG 检索效果？", "weight": 0.9, "metadata": {"source_query": "如何提升 RAG 的召回率？", "index": 1, "prompt": "MULTI_QUERY_PROMPT"}}
+{"original_query": "如何提升 RAG 的召回率？", "strategy": "multi_query", "text": "向量数据库召回不足时应该如何调整 chunk、embedding、top_k 和 rerank？", "weight": 0.9, "metadata": {"source_query": "如何提升 RAG 的召回率？", "index": 2, "prompt": "MULTI_QUERY_PROMPT"}}
+{"original_query": "如何提升 RAG 的召回率？", "strategy": "multi_query", "text": "Query Transformation 在提升 RAG 候选文档覆盖率方面有什么作用？", "weight": 0.9, "metadata": {"source_query": "如何提升 RAG 的召回率？", "index": 3, "prompt": "MULTI_QUERY_PROMPT"}}

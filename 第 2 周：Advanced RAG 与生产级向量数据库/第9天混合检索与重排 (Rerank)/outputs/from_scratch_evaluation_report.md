@@ -1,0 +1,21 @@
+# From-Scratch Hybrid Retrieval Evaluation
+
+## Summary
+
+| Method | Hit@1 | Hit@3 | Hit@5 | MRR |
+|---|---:|---:|---:|---:|
+| BM25 | 0.667 | 1.000 | 1.000 | 0.833 |
+| Embedding-like | 0.667 | 1.000 | 1.000 | 0.806 |
+| Hybrid RRF | 0.667 | 1.000 | 1.000 | 0.833 |
+| Hybrid RRF + Rerank | 1.000 | 1.000 | 1.000 | 1.000 |
+
+## Per Query Top-1
+
+| Query | BM25 Top1 | Embedding-like Top1 | Hybrid Top1 | Rerank Top1 |
+|---|---|---|---|---|
+| BM25 为什么适合检索 BM25Retriever.from_defaults 和 similarity_top_k 这样的参数？ | data/raw/02_embedding_dense_retrieval.md | data/raw/02_embedding_dense_retrieval.md | data/raw/02_embedding_dense_retrieval.md | data/raw/01_bm25_sparse_retrieval.md |
+| 为什么只使用向量检索可能漏掉字段名、函数名和错误码？ | data/raw/02_embedding_dense_retrieval.md | data/raw/02_embedding_dense_retrieval.md | data/raw/02_embedding_dense_retrieval.md | data/raw/02_embedding_dense_retrieval.md |
+| RRF 为什么不直接相加 BM25 和 Embedding 的原始分数？ | data/raw/02_embedding_dense_retrieval.md | data/raw/02_embedding_dense_retrieval.md | data/raw/02_embedding_dense_retrieval.md | data/raw/03_hybrid_retrieval_rrf.md |
+| Reranker 在 RAG 链路中位于什么位置？ | data/raw/04_rerank_second_stage.md | data/raw/04_rerank_second_stage.md | data/raw/04_rerank_second_stage.md | data/raw/04_rerank_second_stage.md |
+| LlamaIndex 里如何用 QueryFusionRetriever 组合 BM25 和向量检索？ | data/raw/05_llamaindex_implementation_notes.md | data/raw/05_llamaindex_implementation_notes.md | data/raw/05_llamaindex_implementation_notes.md | data/raw/05_llamaindex_implementation_notes.md |
+| 为什么生产级 RAG 需要先扩大候选集再让 reranker 选 top 5？ | data/raw/04_rerank_second_stage.md | data/raw/04_rerank_second_stage.md | data/raw/04_rerank_second_stage.md | data/raw/04_rerank_second_stage.md |

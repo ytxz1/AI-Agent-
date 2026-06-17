@@ -1,0 +1,11 @@
+{"id":"ragas#intro#001","title":"RAGAs 简介","text":"RAGAs 是一个用于评估 LLM 应用和 RAG 系统的评估框架。它提供检索质量、答案忠实性、答案相关性和事实正确性等指标。"}
+{"id":"ragas#faithfulness#001","title":"Faithfulness 指标","text":"Faithfulness 用来衡量生成答案中的声明是否能够被检索到的上下文支持。分数越高，说明答案越少依赖编造或模型参数记忆。"}
+{"id":"ragas#context_recall#001","title":"Context Recall 指标","text":"Context Recall 衡量参考答案中的关键信息有多少可以从 retrieved contexts 中找到依据。如果 Context Recall 低，通常说明检索没有找全必要证据。"}
+{"id":"ragas#context_precision#001","title":"Context Precision 指标","text":"Context Precision 关注相关上下文是否排在检索结果前面。相关 chunk 越靠前，LLM 越容易优先利用正确证据。"}
+{"id":"ragas#noise#001","title":"Noise Sensitivity 指标","text":"Noise Sensitivity 衡量 RAG 系统在上下文包含无关或干扰信息时是否容易被带偏。该指标适合观察 top_k 增大、重排或上下文压缩之后的抗噪能力。"}
+{"id":"deepeval#intro#001","title":"DeepEval 简介","text":"DeepEval 是一个面向 LLM 应用的评估框架，风格接近 Pytest。它可以为 RAG、Agent、多轮对话等场景编写测试，并设置通过阈值。"}
+{"id":"flashrag#intro#001","title":"FlashRAG 简介","text":"FlashRAG 是面向 RAG 研究和复现的工具包，提供 retriever、reranker、generator、refiner、compressor 等组件，适合比较不同 RAG pipeline。"}
+{"id":"lighteval#intro#001","title":"LightEval 简介","text":"LightEval 是 Hugging Face 生态中的大语言模型评估工具，主要用于在标准 benchmark 上评估模型能力，而不是直接评估某个知识库 RAG 应用的检索 chunk 是否正确。"}
+{"id":"rag#diagnosis#001","title":"RAG 指标诊断","text":"如果 Context Recall 低但 Faithfulness 高，通常说明系统回答较保守，能够忠实于已有上下文，但检索没有找全必要证据，应优先优化 query rewrite、hybrid search、top_k、embedding 或 chunk 策略。"}
+{"id":"rag#prompt#001","title":"Grounded Prompt","text":"为了减少幻觉，RAG prompt 应要求模型只基于给定资料回答。如果资料中没有足够信息，应回答根据已提供资料无法确认，而不是编造。"}
+{"id":"noise#wrong#001","title":"干扰资料：PDF 导出","text":"某些无关产品支持 PDF 导出，但这不能说明当前被询问产品也支持 PDF 导出。RAG 系统不应把其他产品的能力迁移到当前产品。"}

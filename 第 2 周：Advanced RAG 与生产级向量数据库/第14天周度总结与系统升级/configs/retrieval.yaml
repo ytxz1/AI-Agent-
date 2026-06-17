@@ -1,0 +1,37 @@
+data:
+  raw_dir: ./data/raw
+  eval_path: ./data/eval/eval_queries.jsonl
+
+chunking:
+  chunk_size: 720
+  chunk_overlap: 120
+
+embedding:
+  provider: hashing
+  dimension: 128
+
+milvus:
+  uri: http://localhost:19530
+  token: root:Milvus
+  collection_name: rag_chunks_day14
+  metric_type: COSINE
+
+retrieval:
+  bm25_top_k: 5
+  dense_top_k: 5
+  fusion_top_k: 8
+  rrf_k: 60
+
+query_transformation:
+  strategies:
+    - original
+    - hyde
+    - multi_query
+
+rerank:
+  enabled: true
+  top_n: 4
+
+trace:
+  output_path: ./outputs/rag_v2_retrieval_trace.jsonl
+

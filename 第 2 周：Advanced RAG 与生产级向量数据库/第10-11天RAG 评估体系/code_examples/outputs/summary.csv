@@ -1,0 +1,3 @@
+﻿experiment,sample_count,hit_rate_at_3,recall_at_3,precision_at_3,mrr,context_precision_proxy,context_recall_proxy,faithfulness_proxy,answer_relevancy_proxy,fact_coverage,forbidden_claim_rate,latency_ms,pass_rate
+baseline,6,1.0,1.0,0.5,0.8888888888888888,0.8888888888888888,1.0,0.8508771929824562,0.2893465844665148,0.4444444444444444,0.16666666666666666,0.0,0.3333333333333333
+optimized,6,1.0,1.0,0.5,1.0,1.0,1.0,0.8354354864993163,0.28538979192783437,0.8888888888888888,0.0,1.0,0.8333333333333334

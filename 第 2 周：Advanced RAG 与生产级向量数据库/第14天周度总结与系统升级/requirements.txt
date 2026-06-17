@@ -1,0 +1,9 @@
+# Day 14 RAG v2 upgrade demo
+#
+# The demo can run without third-party dependencies:
+#   python src/rag_v2_upgrade_demo.py
+#   python src/evaluate_rag_v2.py
+#
+# Optional dependencies for the real Milvus backend:
+pymilvus>=2.4.0
+
